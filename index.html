@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Interativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .checklist-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        input[type="checkbox"]:checked + span {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="checklist-container">
+        <h1>Checklist Interativo</h1>
+
+        <form>
+            <label><input type="checkbox" id="task1"> <span>Tarefa 1: Fazer a pesquisa sobre o projeto</span></label>
+            <label><input type="checkbox" id="task2"> <span>Tarefa 2: Escrever o relatório</span></label>
+            <label><input type="checkbox" id="task3"> <span>Tarefa 3: Revisar o código</span></label>
+            <label><input type="checkbox" id="task4"> <span>Tarefa 4: Enviar a documentação</span></label>
+            <label><input type="checkbox" id="task5"> <span>Tarefa 5: Finalizar a apresentação</span></label>
+        </form>
+
+        <div class="footer">
+            <p>Marque as tarefas conforme forem concluídas.</p>
+        </div>
+    </div>
+
+</body>
+</html>
